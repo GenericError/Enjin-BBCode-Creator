@@ -54,7 +54,7 @@ underline_tags = ['[u]', '[/u]']
 strikethrough_tags = ['[s]', '[/s]']
 colour_tags = ["[color=HEXA_CODE]", "[/color]"]
 
-version = "0.0.1"
+version = "0.0.2"
 
 program_title = "Enjin-BBCode-Creator version " + version
 
