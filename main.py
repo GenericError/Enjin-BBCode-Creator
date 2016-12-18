@@ -1,3 +1,5 @@
+""" A BBcode creator for Enjin, entirely written in Python """
+
 import easygui
 import pyperclip
 
