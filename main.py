@@ -77,7 +77,15 @@ for letter in text_to_use:
     colour_incrementer += 1
     string_this_loop = ""
     string_this_loop += str(colour_tags[0]).replace("HEXA_CODE", colour_dictionary[str(colour_incrementer)])
+    if underlined_text:
+        string_this_loop += underline_tags[0]
+    if strikethrough_text:
+        string_this_loop += strikethrough_tags[0]
     string_this_loop += letter
+    if underlined_text:
+        string_this_loop += underline_tags[1]
+    if strikethrough_text:
+        string_this_loop += strikethrough_tags[1]
     string_this_loop += colour_tags[1]
     colourized_string += string_this_loop
     if colour_incrementer == 42:
@@ -92,12 +100,6 @@ if bold_text:
 if italic_text:
     start_tags += italic_tags[0]
     end_tags += italic_tags[1]
-if underlined_text:
-    start_tags += underline_tags[0]
-    end_tags += underline_tags[1]
-if strikethrough_text:
-    start_tags += strikethrough_tags[0]
-    end_tags += strikethrough_tags[1]
 if size != 0:
     start_tags += "[size=" + str(size) + "]"
     end_tags += "[/size]"
